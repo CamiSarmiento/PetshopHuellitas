@@ -58,18 +58,7 @@ section {
   position: relative;
 }
 
-/* .btn::before {
-  top: 0;
-  left: 0;
-  transition: background, color, 300ms;
-  clip-path: circle(0% at 0% 5%);
-} */
-/* 
-.btn:hover {
-  color:  #32CCBC;
-  background:  #32CCBC;
-  text-decoration: underline;
-}   */
+
 
 .btn-inicio {
   display: inline-block;
