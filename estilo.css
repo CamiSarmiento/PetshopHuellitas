@@ -58,8 +58,6 @@ section {
   position: relative;
 }
 
-
-
 .btn-inicio {
   display: inline-block;
   margin-top: 3rem;
@@ -246,6 +244,7 @@ section {
   width: 100%;
   text-align: center;
 }
+
 .boton-compra {
   margin-top: 1rem;
   display: inline-block;
@@ -405,15 +404,18 @@ section {
   height: 600px;
   overflow: hidden;
 }
+
 .slider ul {
   display: flex;
   animation: carousel 25s infinite alternate linear;
   width: 400%;
 }
+
 .slider li {
   width: 50%;
   list-style: none;
 }
+
 .slider img {
   width: 100%;
   height: 100%;
@@ -423,6 +425,7 @@ section {
   0% {
     margin-left: 0;
   }
+
   20% {
     margin-left: 0;
   }
@@ -430,6 +433,7 @@ section {
   25% {
     margin-left: -100%;
   }
+
   45% {
     margin-left: -100%;
   }
@@ -437,6 +441,7 @@ section {
   50% {
     margin-left: -200%;
   }
+
   70% {
     margin-left: -200%;
   }
@@ -444,6 +449,7 @@ section {
   75% {
     margin-left: -300%;
   }
+
   100% {
     margin-left: -300%;
   }
@@ -483,7 +489,7 @@ section {
   justify-content: center;
   width: 100%;
   height: 60px;
-   background:#ad61f0c5; 
+  background: #ad61f0c5;
   color: white;
   font-size: 20px;
   font-weight: 500;
@@ -609,6 +615,7 @@ section {
 body {
   background: #85ffbe83;
 }
+
 h4 {
   display: block;
   text-align: center;
@@ -792,6 +799,7 @@ li {
 .contenedor-contacto {
   width: 40%;
 }
+
 .contactos form span {
   font-size: 1.5rem;
   color: black;
@@ -830,26 +838,87 @@ li {
   width: 80%;
 }
 
+.pie-pagina {
+  background: #ad61f0;
+  text-align: center;
+}
+
+footer .pie-pagina {
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+footer .pie-pagina a {
+  color: #fff;
+  border: 1px solid #fff;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2.3rem;
+  margin: 0.3rem;
+  border-radius: 50%;
+}
+
+footer .pie-pagina a:hover {
+  background-color: #85ffbd;
+}
+
+footer .pie-pagina a i {
+  padding-right: 0.5rem;
+}
+
+footer .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  gap: 1rem;
+  background: #ad61f0;
+}
+
+footer .links a {
+  padding: 0.7rem 2rem;
+  color: #fff;
+
+  font-size: 2rem;
+  border: 1px solid white;
+}
+
+footer .links a:hover {
+  background: #85ffbd;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
   }
+
   .header {
     padding: 2rem;
   }
+
   section {
     padding: 5rem 2rem;
   }
+
   .home {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     background-position: right;
   }
+
   .home .content {
     text-align: center;
     padding-bottom: 5rem;
   }
+
   .home .content h3 {
     font-size: 4.5rem;
   }
@@ -868,8 +937,8 @@ li {
     padding: 10px;
     margin: auto;
   }
- 
 }
+
 @media (max-width: 768px) {
   #menu-btn {
     display: inline-block;
@@ -880,14 +949,16 @@ li {
     top: 99%;
     left: 0;
     right: 0;
-    background: #85ffbd;
+    background: #c885ffda;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
+
   .header .navbar.active {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
+
   .header .navbar a {
     display: block;
     margin: 2rem;
@@ -907,6 +978,7 @@ li {
     justify-content: center;
     text-align: center;
   }
+
   .slider {
     height: auto;
   }
@@ -941,21 +1013,21 @@ li {
     background: transparent;
   }
 
-  
   .contenedor-contacto {
     width: 55%;
     margin: 0;
   }
-  
 }
 
 @media (max-width: 450px) {
   html {
     font-size: 40%;
   }
+
   .header .logo {
     font-size: 30px;
   }
+
   .header .login-form {
     width: 90%;
   }
@@ -966,12 +1038,15 @@ li {
     justify-content: center;
     text-align: center;
   }
+
   .box-contenedor h3 {
     font-size: small;
   }
+
   .box-contenedor span {
     font-size: small;
   }
+
   .contenedor-contacto {
     width: 60%;
   }
@@ -979,6 +1054,7 @@ li {
   .contenedor-contacto p {
     padding-right: 10px;
   }
+
   .search-bar-container input {
     display: none;
   }
