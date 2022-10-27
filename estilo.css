@@ -384,7 +384,27 @@ section {
   gap: 50px;
 }
 
-.fa-solid {
+.fa-credit-card {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  font-size: 1.5rem;
+  height: 1rem;
+}
+
+.fa-shop {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  font-size: 1.5rem;
+  height: 1rem;
+}
+
+.fa-truck-fast {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -838,61 +858,108 @@ li {
   width: 80%;
 }
 
-.pie-pagina {
-  background: #ad61f0;
-  text-align: center;
+.foot1 {
+  position: relative;
+  margin-left: 0%;
+  width: 101.3%;
+  left: -0.6%;
+  bottom: -30px;
+  margin: 0;
 }
 
-footer .pie-pagina {
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  padding: 2rem;
+.fondo {
+  background-color: #ad61f0;
+  margin-bottom: -10%;
+  margin-left: -10%;
+  margin-right: -0.5%;
+  color: transparent;
 }
 
-footer .pie-pagina a {
+.foot1 .logo {
+  font-size: 30px;
+  position: absolute;
+  bottom: 45%;
   color: #fff;
-  border: 1px solid #fff;
-  height: 5rem;
-  width: 5rem;
-  line-height: 5rem;
-  font-size: 2.3rem;
-  margin: 0.3rem;
-  border-radius: 50%;
 }
 
-footer .pie-pagina a:hover {
-  background-color: #85ffbd;
+.fa-paw {
+  animation-name: logo;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  position: relative;
+  animation-delay: 1s;
+  padding: 10px;
+  /* font-size: 40px;
+  padding: 30px 10px; */
 }
 
-footer .pie-pagina a i {
-  padding-right: 0.5rem;
+@keyframes logo {
+  0% {
+    color: aqua;
+    font-style: oblique;
+  }
+
+  25% {
+    color: palegreen;
+    font-style: normal;
+  }
+
+  50% {
+    color: paleturquoise;
+    font-style: oblique;
+  }
+
+  75% {
+    color: palevioletred;
+    font-style: normal;
+  }
+
+  100% {
+    color: aqua;
+    font-style: oblique;
+  }
 }
 
-footer .links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 2rem 0;
-  gap: 1rem;
-  background: #ad61f0;
-}
-
-footer .links a {
-  padding: 0.7rem 2rem;
+.nav-menu {
+  font-size: 15px;
+  position: absolute;
+  left: 1%;
+  bottom: 0%;
   color: #fff;
-
-  font-size: 2rem;
-  border: 1px solid white;
+  margin: 10px;
 }
 
-footer .links a:hover {
-  background: #85ffbd;
+.nav-menu-link {
+  color: #fff;
+  text-decoration: none;
 }
+
+.nav-menu-return {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-menu-item a:hover {
+  text-align: left;
+  color: #85ffbd;
+}
+
+.nav-menu-return:hover,
+.nav-menu-link_active {
+  color: #85ffbd;
+  transition: 0.5s;
+}
+
+.div-icons {
+  bottom: 0%;
+  color: white;
+  position: absolute;
+  right: 2%;
+  font-size: 20px;
+  padding: 10px;
+}
+
+
 
 @media (max-width: 991px) {
   html {
@@ -922,6 +989,15 @@ footer .links a:hover {
   .home .content h3 {
     font-size: 4.5rem;
   }
+
+  .nav-menu ul li {
+    padding: 0;
+  }
+
+  .div-icons {
+    font-size: medium;
+  }
+
 }
 
 @media (max-width: 813px) {
@@ -930,21 +1006,38 @@ footer .links a:hover {
     padding: 10px;
     margin: auto;
   }
+
+  .foot1 .logo {
+    padding: 15px 0;
+    font-size: 20px;
+    bottom: 42%;
+  }
+
 }
 
 @media (max-width: 796px) {
-  .header {
-    padding: 10px;
-    margin: auto;
+ .header {
+   padding: 10px;
+   margin: auto;
   }
+
+  .div-icons {
+    font-size: 15px;
+  }
+
+  .nav-menu{
+    font-size: 13px;
+    
+  }
+
 }
 
 @media (max-width: 768px) {
   #menu-btn {
-    display: inline-block;
+   display: inline-block;
   }
 
-  .header .navbar {
+ .header .navbar {
     position: absolute;
     top: 99%;
     left: 0;
@@ -998,10 +1091,20 @@ footer .links a:hover {
   .contenedor-contacto p {
     padding-right: 20px;
   }
+
+  .nav-menu ul li {
+   font-size: medium;
+
+  }
+
+  .foot1 .logo {
+   display: none;
+  }
+
 }
 
 @media (max-width: 466px) {
-  .header .logo {
+ .header .logo {
     font-size: 40px;
   }
 
@@ -1017,6 +1120,20 @@ footer .links a:hover {
     width: 55%;
     margin: 0;
   }
+
+  .foot1 {
+    background: #ad61f0;
+    height: 20rem;
+  }
+
+  .foot1 .logo {
+    display: block;
+    font-size: 40px;
+    bottom: 60%;
+    left: 25%;
+      
+  }
+
 }
 
 @media (max-width: 450px) {
@@ -1058,4 +1175,23 @@ footer .links a:hover {
   .search-bar-container input {
     display: none;
   }
+
+  .foot1 .logo{
+    font-size: 30px;
+    bottom: 50%;
+    left: 25%;
+   
+   
+  }
+
+  .nav-menu ul li{
+
+    font-size: 11px;
+  }
+
+  .div-icons{
+    font-size: 12px;
+  }
+
+ 
 }
